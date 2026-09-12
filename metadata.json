@@ -1,0 +1,6 @@
+{
+  "name": "Your Day to Day Adventure",
+  "description": "A cozy 16-bit retro dungeon crawler life RPG where real-world productivity tasks become epic quests, yielding XP, Gold, and attribute mastery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-amber-gold: #f59e0b;
+    --color-dungeon-dark: #14110f;
+    --color-parchment: #f6ebd7;
+  }
+}
+
+/* 16-bit Retro Dungeon Crawler UI accents */
+.pixel-border {
+  box-shadow: 
+    0 -3px 0 0 #2a201a,
+    0 3px 0 0 #2a201a,
+    -3px 0 0 0 #2a201a,
+    3px 0 0 0 #2a201a;
+}
+
+.pixel-border-amber {
+  box-shadow: 
+    0 -3px 0 0 #92400e,
+    0 3px 0 0 #92400e,
+    -3px 0 0 0 #92400e,
+    3px 0 0 0 #92400e;
+}
+
+.retro-bevel {
+  box-shadow: 
+    inset 2px 2px 0px rgba(255, 255, 255, 0.12),
+    inset -2px -2px 0px rgba(0, 0, 0, 0.35),
+    0 4px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.retro-button-press {
+  transition: all 0.08s ease-in-out;
+}
+
+.retro-button-press:active {
+  transform: translateY(2px);
+  box-shadow: 
+    inset 1px 1px 0px rgba(0, 0, 0, 0.4),
+    0 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.parchment-pattern {
+  background-color: #241c16;
+  background-image: radial-gradient(#382c22 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191410;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #473628;
+  border-radius: 2px;
+  border: 1px solid #281e17;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #785a3c;
+}
+
+/* Font helpers */
+.font-pixel {
+  font-family: 'Pixelify Sans', monospace, sans-serif;
+}
+
+.font-medieval {
+  font-family: 'MedievalSharp', cursive, serif;
+}
